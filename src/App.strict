@@ -1,0 +1,4 @@
+method Run(options Options)
+
+method Run()
+  Run(Options.Empty())

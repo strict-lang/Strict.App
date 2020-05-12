@@ -1,0 +1,8 @@
+import Strict.Log
+
+implement Strict.App
+
+has log Log
+
+method Run()
+  log.Print("Hello, World!")

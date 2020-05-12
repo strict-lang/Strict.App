@@ -1,0 +1,9 @@
+implements Error
+
+factory Success()
+  return new(code: 0)
+
+factory Failure()
+  return new(code: -1)
+
+has code Number

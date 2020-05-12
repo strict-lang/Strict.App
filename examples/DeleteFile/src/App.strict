@@ -1,0 +1,16 @@
+import Strict.App
+import Strict.File
+
+implement App
+
+method Run(options App.Options) 
+  if let fileName = options.RemainingArguments.First() exists
+    delete(fileName)
+    return
+  throw App.Options.MissingArgument("no file name was given")
+
+method delete(fileName String)
+  let file = File(fileName)
+  if not file.Exists()  
+    throw App.Options.InvalidArgument("file does not exist")
+  file.Delete()

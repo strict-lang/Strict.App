@@ -1,0 +1,7 @@
+implement Error
+
+has Message String
+has Argument String
+
+method Report() String
+  return message
