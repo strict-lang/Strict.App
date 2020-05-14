@@ -1,7 +1,0 @@
-implement Error
-
-has Argument String
-has Message String
-
-method Report() returns String
-  return Message

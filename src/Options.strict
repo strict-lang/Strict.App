@@ -1,0 +1,26 @@
+implement Sequence<String>
+
+has arguments String[]
+
+factory Empty()
+  return new(arguments: [])
+
+factory (arguments String[])
+  return new(arguments: arguments)
+
+method Index(index Number) returns String
+  return arguments[index]
+
+method Count() returns Number 
+  return arguments.Count()
+
+method IsEmpty() returns Boolean
+  return arguments.IsEmpty()
+
+method First() returns String?
+  if arguments.IsEmpty()
+    return None
+  return arguments[0]
+
+method Iterate() returns Iteration<String>
+  return arguments.Iterate()
